@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="rs">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    @media only screen and (orientation: portrait) {
+        body {
+            background-color: #edb92E;
+
+            animation: kikac 2.5s linear 1;
+            animation-delay: .1s;
+        }
+
+        /*
+        @keyframes kikac {
+            from {
+                background-color: #edb92E;
+            }
+
+            to {
+                background-color: #c7363d;
+            }
+        }
+*/
+        .sz {
+            display: block;
+            position: relative;
+            width: 272px;
+            height: 272px;
+            margin-top: 155px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 150%;
+            text-align: center;
+            box-sizing: content-box;
+            z-index: 1;
+            box-sizing: border-box;
+        }
+
+        .lg,
+        .dg,
+        .ld,
+        .dd {
+            display: block;
+            position: absolute;
+            width: 131px;
+            height: 131px;
+            z-index: 2;
+        }
+
+        .lg {
+
+
+            margin-left: 0px;
+            margin-top: 0px;
+            background-color: #fff;
+            animation: lg 2.5s linear 1;
+            animation-delay: .1s;
+        }
+
+        @keyframes lg {
+            from {
+                background-color: #fff;
+            }
+
+            to {
+                background-color: #c7363d;
+            }
+        }
+
+
+        .dg {
+            animation: dg 2.5s linear 1;
+            animation-delay: .1s;
+            margin-left: 141px;
+            margin-top: 0px;
+            background-color: #0c4077;
+        }
+
+        @keyframes dg {
+            from {
+                background-color: #0c4077;
+
+            }
+
+            to {
+                background-color: #fff;
+            }
+        }
+
+
+
+        .dd {
+            animation: dd 2.5s linear 1;
+            animation-delay: .1s;
+            margin-left: 141px;
+            margin-top: 141px;
+            background-color: #000;
+
+        }
+
+        @keyframes dd {
+            from {
+                background-color: #000;
+
+            }
+
+            to {
+                background-color: #0c4077;
+            }
+        }
+
+        .ld {
+            animation: ld 2.5s linear 1;
+            animation-delay: .1s;
+            margin-left: 0px;
+            margin-top: 141px;
+            background-color: #c7363d;
+        }
+
+        @keyframes ld {
+            from {
+                background-color: #c7363d;
+            }
+
+            to {
+                background-color: #000;
+            }
+
+
+        }
+
+        .levitr,
+        .srednjidesni,
+        .srednjilevi,
+        .desnitr {
+            z-index: 102;
+            display: block;
+            position: absolute;
+            width: 71px;
+            margin-top: 52px;
+            background-color: #edb92E;
+
+        }
+
+
+
+
+        .levitr,
+        .desnitr {
+            height: 113px;
+        }
+
+        .srednjidesni,
+        .srednjilevi {
+            height: 168px;
+
+        }
+
+        .levitr {
+            clip-path: polygon(0% 100%, 0% 0%, 100% 0%);
+            width: 71px;
+            margin-left: -1px;
+            animation: lt 5s linear 1;
+            animation-delay: .2s;
+
+        }
+
+
+        @keyframes lt {
+            0% {
+                margin-left: -1px;
+                opacity: 1;
+
+
+            }
+
+            10% {
+                margin-left: 140px;
+                opacity: 0.5;
+
+            }
+
+            50% {
+                margin-left: 140px;
+                opacity: 1;
+
+            }
+
+            90% {
+
+                margin-left: 140px;
+                opacity: 1;
+            }
+
+            100% {
+
+                margin-left: -1px;
+                opacity: 0;
+            }
+
+
+        }
+
+        .srednjilevi {
+            margin-left: 61px;
+
+            clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+            /*104*/
+            animation: slt 5s linear 1;
+            animation-delay: .2s;
+        }
+
+        @keyframes slt {
+            0% {
+                margin-left: 71px;
+                opacity: 1;
+
+
+            }
+
+            10% {
+                margin-left: 202px;
+                opacity: 0.5;
+
+            }
+
+            50% {
+                margin-left: 202px;
+                opacity: 1;
+
+            }
+
+            90% {
+
+                margin-left: 202px;
+                opacity: 1;
+            }
+
+            100% {
+
+                margin-left: 71px;
+                opacity: 0;
+            }
+        }
+
+        .srednjidesni {
+            margin-left: 140px;
+            clip-path: polygon(0% 100%, 0% 0%, 100% 100%);
+            animation: sdt 5s linear 1;
+            animation-delay: .2s;
+
+        }
+
+        @keyframes sdt {
+            0% {
+                margin-left: 140px;
+                opacity: 1;
+
+
+            }
+
+            10% {
+                margin-left: -1px;
+                opacity: 0.5;
+
+            }
+
+            50% {
+                margin-left: -1px;
+                opacity: 1;
+
+            }
+
+            90% {
+
+                margin-left: -1px;
+                opacity: 1;
+            }
+
+            100% {
+
+                margin-left: 140px;
+                opacity: 0;
+            }
+
+
+        }
+
+        .desnitr {
+            margin-left: 202px;
+            clip-path: polygon(100% 0%, 0% 0%, 100% 100%);
+            animation: dt 5s linear 1;
+            animation-delay: .2s;
+
+        }
+
+        @keyframes dt {
+            0% {
+                margin-left: 151px;
+                opacity: 1;
+
+
+            }
+
+            10% {
+                margin-left: 61px;
+                opacity: 0.5;
+
+            }
+
+            50% {
+                margin-left: 61px;
+                opacity: 1;
+
+            }
+
+            90% {
+
+                margin-left: 61px;
+                opacity: 1;
+            }
+
+            100% {
+
+                margin-left: 151px;
+                opacity: 0;
+            }
+
+
+        }
+
+
+    }
+
+    @media only screen and (orientation: landscape) {
+        body {
+            background-color: #edb92E;
+
+        }
+
+        .sz {
+            display: block;
+            position: relative;
+            width: 272px;
+            height: 272px;
+            margin-top: 155px;
+            margin-right: auto;
+            margin-left: auto;
+            font-size: 150%;
+            text-align: center;
+            box-sizing: content-box;
+            z-index: 1;
+            box-sizing: border-box;
+        }
+
+        .lg,
+        .dg,
+        .ld,
+        .dd {
+            display: block;
+            position: absolute;
+            width: 131px;
+            height: 131px;
+            z-index: 2;
+        }
+
+        .lg {
+            margin-left: 0px;
+            margin-top: 0px;
+            background-color: #fff;
+            animation: lg 2.5s linear 1;
+            animation-delay: .1s;
+        }
+
+        @keyframes lg {
+            from {
+                background-color: #fff;
+            }
+
+            to {
+                background-color: #c7363d;
+            }
+        }
+
+
+        .dg {
+            animation: dg 2.5s linear 1;
+            animation-delay: .1s;
+
+            margin-left: 141px;
+            margin-top: 0px;
+            background-color: #0c4077;
+        }
+
+        @keyframes dg {
+            from {
+                background-color: #0c4077;
+
+            }
+
+            to {
+                background-color: #fff;
+            }
+        }
+
+
+
+        .dd {
+            animation: dd 2.5s linear 1;
+            animation-delay: .1s;
+            margin-left: 141px;
+            margin-top: 141px;
+            background-color: #000;
+
+        }
+
+        @keyframes dd {
+            from {
+                background-color: #000;
+
+            }
+
+            to {
+                background-color: #0c4077;
+            }
+        }
+
+        .ld {
+            animation: ld 2.5s linear 1;
+            animation-delay: .1s;
+            margin-left: 0px;
+            margin-top: 141px;
+            background-color: #c7363d;
+        }
+
+        @keyframes ld {
+            from {
+                background-color: #c7363d;
+            }
+
+            to {
+                background-color: #000;
+            }
+
+
+        }
+
+        .levitr,
+        .srednjidesni,
+        .srednjilevi,
+        .desnitr {
+            /* background-color:green;*/
+            z-index: 102;
+            display: block;
+            position: absolute;
+            width: 71px;
+            margin-top: 52px;
+            background-color: #edb92E;
+
+        }
+
+
+
+
+        .levitr,
+        .desnitr {
+            height: 113px;
+        }
+
+        .srednjidesni,
+        .srednjilevi {
+            height: 168px;
+
+        }
+
+        .levitr {
+            clip-path: polygon(0% 100%, 0% 0%, 100% 0%);
+
+            animation: lt 5s linear 1;
+            animation-delay: .3s;
+
+        }
+
+
+        @keyframes lt {
+            0% {
+                margin-left: 0;
+                opacity: 1;
+
+
+            }
+
+            10% {
+                margin-left: 140px;
+                opacity: 0.5;
+
+            }
+
+            50% {
+                margin-left: 140px;
+                opacity: 1;
+
+            }
+
+            90% {
+
+                margin-left: 140px;
+                opacity: 1;
+            }
+
+            100% {
+
+                margin-left: 0%;
+                opacity: 0;
+            }
+
+
+        }
+
+        .srednjilevi {
+
+            margin-left: 61px;
+
+            clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+
+            animation: slt 5s linear 1;
+            animation-delay: .3s;
+        }
+
+        @keyframes slt {
+            0% {
+                margin-left: 61px;
+                opacity: 1;
+
+
+            }
+
+            10% {
+                margin-left: 202px;
+                opacity: 0.5;
+
+            }
+
+            50% {
+                margin-left: 202px;
+                opacity: 1;
+
+            }
+
+            90% {
+
+                margin-left: 202px;
+                opacity: 1;
+            }
+
+            100% {
+
+                margin-left: 61px;
+                opacity: 0;
+            }
+        }
+
+        .srednjidesni {
+            margin-left: 140px;
+            clip-path: polygon(0% 100%, 0% 0%, 100% 100%);
+            animation: sdt 5s linear 1;
+            animation-delay: .3s;
+
+        }
+
+        @keyframes sdt {
+            0% {
+                margin-left: 140px;
+                opacity: 1;
+
+
+            }
+
+            10% {
+                margin-left: -1px;
+                opacity: 0.5;
+
+            }
+
+            50% {
+                margin-left: -1px;
+                opacity: 1;
+
+            }
+
+            90% {
+
+                margin-left: -1px;
+                opacity: 1;
+            }
+
+            100% {
+
+                margin-left: 140px;
+                opacity: 0;
+            }
+
+
+        }
+
+        .desnitr {
+            margin-left: 202px;
+            clip-path: polygon(100% 0%, 0% 0%, 100% 100%);
+
+            animation: dt 5s linear 1;
+            animation-delay: .3s;
+
+        }
+
+        @keyframes dt {
+            0% {
+                margin-left: 151px;
+                opacity: 1;
+
+
+            }
+
+            10% {
+                margin-left: 61px;
+                opacity: 0.5;
+
+            }
+
+            50% {
+                margin-left: 61px;
+                opacity: 1;
+
+            }
+
+            90% {
+
+                margin-left: 61px;
+                opacity: 1;
+            }
+
+            100% {
+
+                margin-left: 151px;
+                opacity: 0;
+            }
+
+
+        }
+
+
+    }
+</style>
+
+<body>
+    <div class="sz">
+        <div class="lg"></div>
+        <div class="dg"></div>
+        <div class="ld"></div>
+        <div class="dd"></div>
+        <div class="levitr"></div>
+        <div class="srednjilevi"></div>
+        <div class="srednjidesni"></div>
+        <div class="desnitr"></div>
+
+
+    </div>
+
+</body>
+
+</html>
